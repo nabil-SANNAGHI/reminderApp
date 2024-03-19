@@ -28,9 +28,9 @@ export const register = async (user) => {
 
 export const signin = async (user) => {
     return fetcher({
-        url: "/api/signin",
+        url: "/api/login",
         method: "POST",
         body: user,
-        json: false
+        json: true
     })
 }
